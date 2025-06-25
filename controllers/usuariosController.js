@@ -117,7 +117,6 @@ export const actualizarProfilePic = async (req, res) => {
         return res.status(400).json({ error: 'No se proporciono ninguna imagen'})
     }
 
-    // console.log("File: ", file);
     
 
     const fileName = `${Date.now()}_${file.originalname}`

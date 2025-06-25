@@ -5,6 +5,7 @@ const medicoSchema = mongoose.Schema({
     apellido: {type: String, required:true},
     email: { type: String, required: true},
     especialidad: {type: mongoose.Schema.Types.ObjectId, ref: "Especialidad" , required: true},
+    turnos: [{ type: mongoose.Schema.Types.ObjectId, ref: "Turno"}],
     profile_pic: { type: String}
 }, { timestamps: true})
 

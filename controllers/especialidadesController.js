@@ -1,7 +1,4 @@
 import Especialidad from "../models/Especialidad.js"
-import bcrypt from "bcryptjs";
-import jwt from 'jsonwebtoken'
-import supabase from "../config/supabase.js";
 
 
 export const getEspecialidades = async (req, res) => {
@@ -30,10 +27,10 @@ export const getEspecialidadById = async (req, res) => {
 
 export const CrearEspecialidad = async (req, res) => {  
 
-    // console.log("Req crear Usuario: ", 
-    //     { reqUsuario: req.usuario,
-    //       reqBody: req.body
-    //     });
+     console.log("Req crear Usuario: ", 
+         { reqUsuario: req.usuario,
+           reqBody: req.body
+         });
     
 
 
